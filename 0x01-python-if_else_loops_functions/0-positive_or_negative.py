@@ -8,5 +8,3 @@ elif number < 0:
     print(f"{number} is negative")
 else:
     print("0 is zero")
-
-    
