@@ -2,6 +2,7 @@
 """Module documentation
 """
 
+
 class Square:
     '''Create a square with a given size
 
