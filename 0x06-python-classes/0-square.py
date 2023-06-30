@@ -2,6 +2,7 @@
 """Module documentation
 """
 
+
 class Square:
     """
     This class creates a square
