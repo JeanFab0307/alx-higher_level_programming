@@ -13,8 +13,8 @@ class Square:
     """
 
     def __init__(self, size=0, position=(0, 0)):
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     def area(self):
         """Public instance method to calculate the area of a Square
@@ -26,9 +26,9 @@ class Square:
 
     def my_print(self):
         """Prints a square with #"""
-        for i in range(self.__position[1]):
-            print()
         if self.__size != 0:
+            for i in range(self.__position[1]):
+                print()
             for i in range(self.__size):
                 print(" " * self.__position[0], end="")
                 print("#" * self.__size)
@@ -57,6 +57,10 @@ class Square:
     @position.setter
     def position(self, position):
         """Set the value of the attribute position"""
-        if len(position) != 2 or position[0] < 0 or position[1] < 0:
-            raise TypeError("position must be a tuple of 2 positive integers")
+        messErr = "position must be a tuple of 2 positive integers"
+        if type(position) != tuple or len(position) != 2:
+            raise TypeError(messErr)
+        for i in range(len(position)):
+            if type(position[i]) != int or position[i] < 0:
+                raise TypeError(messErr)
         self.__position = position
