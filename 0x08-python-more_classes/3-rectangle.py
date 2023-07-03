@@ -31,7 +31,7 @@ Args:
 
     def __str__(self):
         shape = ""
-        if self.__width != 0 or self.__height != 0:
+        if self.__width != 0 and self.__height != 0:
             for i in range(self.__height):
                 if i != 0:
                     shape += "\n"
