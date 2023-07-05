@@ -2,4 +2,5 @@
 *#
 *main.py*
 sc*
-*.txt
+./*.txt
+*pycache*
