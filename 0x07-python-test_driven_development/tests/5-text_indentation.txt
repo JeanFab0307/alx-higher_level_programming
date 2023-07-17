@@ -1,0 +1,49 @@
+usage text_indentation(text)
+**********
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+	>>> text_indentation("okay. i am. cool.")
+	okay.
+	<BLANKLINE>
+	i am.
+	<BLANKLINE>
+	cool.
+	<BLANKLINE>
+
+	>>> text_indentation("Another, om: For the ages.        what am i saay?")
+	Another, om:
+	<BLANKLINE>
+	For the ages.
+	<BLANKLINE>
+	what am i saay?
+	<BLANKLINE>
+
+	>>> text_indentation("two.word")
+	two.
+	<BLANKLINE>
+	word
+
+	>>> text_indentation("")
+	
+
+	>>> text_indentation(".   . ?,:  :n")
+	.
+	<BLANKLINE>
+	.
+	<BLANKLINE>
+	?
+	<BLANKLINE>
+	,:
+	<BLANKLINE>
+	:
+	<BLANKLINE>
+	n
+
+	>>> text_indentation(98)
+	Traceback (most recent call last):
+	TypeError: text must be a string
+
+	>>> text_indentation(None)
+        Traceback (most recent call last):
+        TypeError: text must be a string
+
