@@ -9,4 +9,4 @@ Arg:
     filename(str): the path of the file
     """
     with open(filename, mode="r", encoding="utf-8") as f:
-        print(f.read())
+        print(f.read(), end="")
