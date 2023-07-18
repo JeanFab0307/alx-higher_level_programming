@@ -9,8 +9,5 @@ class BaseGeometry:
 The shape of certain elements
     """
 
-
     def area(self):
         raise Exception("area() is not implemented")
-
-
