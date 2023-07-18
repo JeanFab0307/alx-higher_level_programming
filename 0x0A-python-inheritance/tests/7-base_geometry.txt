@@ -1,0 +1,28 @@
+Validate value with the method integer_validator in class BaseGeometry
+*****
+
+	>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+	>>> bg = BaseGeometry()
+
+	>>> bg.integer_validator("square", 8)
+
+	>>> bg.integer_validator("Ok", 0)
+	Traceback (most recent call last):
+	ValueError: Ok must be greater than 0
+
+	>>> bg.integer_validator("Ok", -87)
+        Traceback (most recent call last):
+        ValueError: Ok must be greater than 0
+
+	>>> bg.integer_validator("Oklm", "89")
+        Traceback (most recent call last):
+        TypeError: Oklm must be an integer
+
+	>>> bg.integer_validator("Oklm", 45.98)
+        Traceback (most recent call last):
+        TypeError: Oklm must be an integer
+
+	>>> bg.integer_validator("Oklm", None)
+        Traceback (most recent call last):
+        TypeError: Oklm must be an integer
