@@ -22,6 +22,18 @@ Args:
         """Return the area of a rectangle"""
         return self.__width * self.__height
 
+    def display(self):
+        """Prints the rectangle using '#'"""
+        print("\n" * self.__y, end="")
+        for i in range(self.__height):
+            print(" " * self.__x + "#" * self.__width)
+
+    def __str__(self):
+        return "[Rectangle]({}) {}/{} - {}/{}".format(self.id, self.__x,
+                                                      self.__y,
+                                                      self.__width,
+                                                      self.__height)
+
     @property
     def width(self):
         return self.__width
