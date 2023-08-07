@@ -19,7 +19,9 @@ Args:
         super().__init__(id)
 
     def area(self):
+        """Return the area of a rectangle"""
         return self.__width * self.__height
+
     @property
     def width(self):
         return self.__width
