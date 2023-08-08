@@ -44,7 +44,7 @@ Args:
 
         for key, value in kwargs.items():
             if key == "id":
-                self.key = value
+                self.id = value
             elif key == "width":
                 self.width = value
             elif key == "height":
