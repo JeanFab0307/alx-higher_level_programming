@@ -1,2 +1,2 @@
 -- Comments, Just trying
-SHOW TABLES;
+SHOW DATABASES;
