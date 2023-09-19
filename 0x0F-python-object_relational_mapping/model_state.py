@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/bin/python3
 """Contain the class definition of a State and an instance Base"""
 
 
