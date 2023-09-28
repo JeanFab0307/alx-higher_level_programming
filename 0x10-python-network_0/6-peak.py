@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/bin/python3
 # contain the function find_peak
 
 def find_peak(list_of_integers):
