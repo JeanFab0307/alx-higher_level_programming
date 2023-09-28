@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# contain the function find_peak
+"""contain the function find_peak"""
 
 def find_peak(list_of_integers):
     """find the peak of a list of unsorted int"""
