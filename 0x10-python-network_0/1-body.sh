@@ -1,3 +1,3 @@
 #!/bin/bash
 # display th ebody of the response
-curl -X GET -s "$1"
+curl -L "$1"
