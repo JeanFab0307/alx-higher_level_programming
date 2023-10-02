@@ -7,10 +7,9 @@ if __name__ == "__main__":
     db = MySQLdb.connect(host='localhost', port=3306, user=argv[1],
                          passwd=argv[2], db=argv[3])
     cur = db.cursor()
-    query = "SELECT DISTINCT cities.name FROM cities "
-    "WHERE cities.state_id = (SELECT states.id FROM states "
-    "WHERE states.name = '{}') "
-    "ORDER BY cities.id ASC"
+    query = "SELECT cities.name FROM cities \
+WHERE cities.state_id = (SELECT id FROM states WHERE name = '{}') \
+ORDER BY cities.id ASC"
     value = argv[4].partition(";")
     if value[1] == ";":
         value = value[0][:-1]
